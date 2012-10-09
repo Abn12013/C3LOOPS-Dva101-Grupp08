@@ -1,6 +1,8 @@
 body
 {
   background:url(Grafik/c3loops/bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 #hacks
@@ -14,3 +16,69 @@ body
 #hacks:hover
 {
 }
+
+#about
+{
+  background-image:url(Grafik/c3loops/about.png);
+  background-repeat: no-repeat;
+  width: 145px;
+  height: 100px;
+}
+
+#news
+{
+  background-image:url(Grafik/c3loops/news.png);
+  background-repeat: no-repeat;
+  width: 135px;
+  height: 150px;
+}
+
+#media
+{
+  background-image:url(Grafik/c3loops/media.png);
+  background-repeat: no-repeat;
+  width: 135px;
+  height: 150px;
+}
+
+#webshop
+{
+  background-image:url(Grafik/c3loops/webshop.png);
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 600px;
+}
+
+#innerstaringen
+{
+  background-image:url(Grafik/c3loops/innersta-ringen.png);
+  background-repeat: no-repeat;
+  width: 135px;
+  height: 200px;
+}
+
+#about-news
+{
+  background-image:url(Grafik/c3loops/about-news.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+}
+
+#hack-media
+{
+  background-image:url(Grafik/c3loops/hack-media.png);
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 250px;
+}
+#logo
+{
+  background-image:url(Grafik/c3loops/logo.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+
+
