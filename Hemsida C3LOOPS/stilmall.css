@@ -43,7 +43,7 @@ body
 
 #news
 {
-  background-image:url(Grafik/c3loops/news.png);
+ 
   background-repeat: no-repeat;
   width: 135px;
   height: 170px;
@@ -101,8 +101,8 @@ body
   position:fixed;
   top: 50%;
   left: 50%;
-  margin-left: -135px;
-  margin-top: 118px;
+  margin-left: -130px;
+  margin-top: 120px;
 }
 
 #hack-media
