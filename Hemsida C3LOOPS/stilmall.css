@@ -69,7 +69,6 @@ body
 
 #webshop
 {
-  background-image:url(Grafik/c3loops/webshop.png);
   background-repeat: no-repeat;
   width: 400px;
   height: 625px;
@@ -77,6 +76,7 @@ body
   top: 50%;
   left: 50%;
   margin-top: -300px;
+  margin-left:-36px;
 }
 
 #innerstaringen
