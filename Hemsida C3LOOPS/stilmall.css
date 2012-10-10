@@ -96,16 +96,15 @@ body
   margin-top: -105px;
 }
 
-#about-news
+#contact
 {
-  background-image:url(Grafik/c3loops/about-news.png);
   background-repeat: no-repeat;
   width: 200px;
   height: 150px;
   position:fixed;
   top: 50%;
   left: 50%;
-  margin-left: -130px;
+  margin-left: -157px;
   margin-top: 120px;
 }
 
