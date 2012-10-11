@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Scroll Horizontally</title>
+
+<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+	$('a.panel').click(function () {
+
+		$('a.panel').removeClass('selected');
+		$(this).addClass('selected');
+		
+		current = $(this);
+		
+		$('#wrapper').scrollTo($(this).attr('href'), 800);		
+		
+		return false;
+	});
+
+	$(window).resize(function () {
+		resizePanel();
+	});
+	
+});
+
+function resizePanel() {
+
+	width = $(window).width();
+	height = $(window).height();
+
+	mask_width = width * $('.item').length;
+		
+	$('#debug').html(width  + ' ' + height + ' ' + mask_width);
+		
+	$('#wrapper, .item').css({width: width, height: height});
+	$('#mask').css({width: mask_width, height: height});
+	$('#wrapper').scrollTo($('a.selected').attr('href'), 0);
+		
+}
+
+</script>
+
+<style>
+html {
+height:100%;
+	width:100%;
+	}
+
+body {
+	height:100%;
+	width:100%;
+	margin:0;padding:0;
+	overflow:hidden;
+}
+
+#wrapper {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;left:0;
+	background-color:#ccc;
+	overflow:hidden;
+}
+
+	#mask {
+		width:500%;
+		height:100%;
+		background-color:#eee;
+	}
+
+	.item {
+		width:20%;
+		height:100%;
+		float:left;
+		background-image: url('grafik/c3loops/bg.png');
+	}
+	
+	
+	.content {
+		width:400px;
+		height:300px;
+		top:20%;
+		margin:0 auto;
+		background-color:#aaa;
+		position:relative;
+	}
+	
+	.selected {
+		background:#fff;
+		font-weight:700;
+	}
+
+	.clear {
+		clear:both;
+	}
+	
+	.hacks
+	{
+	background-repeat: no-repeat;
+	width: 135px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: 5px;
+	}
+	
+	.about
+{
+  background-image:url(Grafik/c3loops/about.png);
+  background-repeat: no-repeat;
+  width: 145px;
+  height: 100px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 108px;
+  margin-left: 7px;
+}
+
+.news
+{
+ 
+  background-repeat: no-repeat;
+  width: 135px;
+  height: 170px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -218px;
+  margin-top: 0px;
+}
+
+.media
+{
+  background-image:url(Grafik/c3loops/media.png);
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 132px;
+  margin-top: -5px;
+}
+
+.webshop
+{
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 625px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left:-36px;
+}
+
+#webshop:hover
+{
+}
+
+.innerstaringen
+{
+  background-image:url(Grafik/c3loops/innersta-ringen.png);
+  background-repeat: no-repeat;
+  width: 135px;
+  height: 200px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -130px;
+  margin-top: -105px;
+}
+
+.about-news
+{
+  background-image:url(Grafik/c3loops/about-news.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -130px;
+  margin-top: 120px;
+}
+
+.hack-media
+{
+  background-image:url(Grafik/c3loops/hack-media.png);
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 125px;
+  margin-top: -135px;
+}
+.logo
+{
+  background-image:url(Grafik/c3loops/logo.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -75px;
+  margin-top: -75px;
+}
+
+</style>
+</head>
+<body>
+
+
+<div id="wrapper">
+	<div id="mask">
+
+		<div id="item1" class="item">
+			
+			<a name="item1"></a>
+			 
+				<a href="#item1" class="panel"><div class="media"><img src="grafik/c3loops/media.png"></div></a> | 
+				<a href="#item2" class="panel"><div class="hacks"><img src="grafik/c3loops/hacks.png"></div></a> | 
+				<a href="#item3" class="panel"><div class="about"><img src="grafik/c3loops/about.png"></div></a> | 
+				<a href="#item4" class="panel"><div class="news"><img src="grafik/c3loops/news.png"></div></a> | 
+				<a href="#item5" class="panel"><div class="webshop"><img src="grafik/c3loops/webshop.png"></div></a>
+				<div class="logo"></div>
+				<div class="hack-media"></div>
+				<div class="about-news"></div>
+				<div class="innerstaringen"></div>
+				
+			
+		</div>
+		
+		<div id="item2" class="item">
+			<a name="item2"></a>
+			<a href="#item1" class="panel"><img src="grafik/c3loops/back.png"></a>
+		</div>
+		
+		<div id="item3" class="item">
+			<a name="item3"></a>
+			item3 <a href="#item1" class="panel"><img src="grafik/c3loops/back.png"></a>
+		</div>
+
+		<div id="item4" class="item">
+			<a name="item4"></a>
+			item4 <a href="#item1" class="panel"><img src="grafik/c3loops/back.png"></a>
+		</div>
+		
+		<div id="item5" class="item">
+			<a name="item5"></a>
+			item5 <a href="#item1" class="panel"><img src="grafik/c3loops/back.png"></a>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>
