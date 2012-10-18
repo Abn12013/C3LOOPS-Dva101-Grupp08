@@ -166,6 +166,8 @@ display: none;
     position:absolute;
     top:-6em; left:4em; width:10em;
 	z-index: 20;
+	transition-delay:4s;
+
 }
 
 
