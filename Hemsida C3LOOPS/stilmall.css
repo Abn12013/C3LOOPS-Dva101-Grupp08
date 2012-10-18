@@ -75,7 +75,7 @@ display: none;
 
  display:block;
     position:absolute;
-    top:-5em; left:-8em; width:10em;
+    top:-4em; left:6em; width:10em;
 }
 	
 .about
@@ -278,6 +278,32 @@ margin-left: -643px;
 margin-top: -370px;
 }
 
+#news-page {
+width: 637px;
+height: 635px;
+left: 350%;
+top: 50%;
+position: absolute;
+margin-left: -317px;
+margin-top: -317px;
+}
 
+#about-page {
+width: 420px;
+height: 567px;
+left: 250%;
+top: 50%;
+position: absolute;
+margin-left: -210px;
+margin-top: -283px;
+}
 
-
+#media-page {
+width: 968px;
+height: 582px;
+left: 550%;
+top: 50%;
+position: absolute;
+margin-left: -484px;
+margin-top: -291px;
+}
