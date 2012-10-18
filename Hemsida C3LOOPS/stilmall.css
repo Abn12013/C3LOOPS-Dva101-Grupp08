@@ -93,6 +93,24 @@ display: none;
   margin-left: 10px;
 }
 
+.about:hover
+{
+  
+}
+
+.about span {
+display: none;
+
+}
+.about:hover span {
+
+ display:block;
+    position:absolute;
+    top:-5em; left:8em; width:10em;
+	z-index: 20;
+}
+
+
 .news
 {
  
