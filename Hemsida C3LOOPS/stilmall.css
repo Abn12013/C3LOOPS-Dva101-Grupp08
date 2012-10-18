@@ -118,6 +118,28 @@ display: none;
   margin-top: 7px;
 }
 
+.news:hover
+{
+  
+}
+
+.news span {
+display: none;
+
+}
+.news:hover span {
+
+ display:block;
+    position:absolute;
+    top:-5em; left:-10em; width:10em;
+	z-index: 20;
+	opacity: 1;
+   transition: opacity .95s ease-in-out;
+   -moz-transition: opacity .95s ease-in-out;
+   -webkit-transition: opacity .95s ease-in-out;
+}
+
+
 .media
 {
   background-image:url(grafik/c3loops/media.png);
@@ -158,8 +180,25 @@ display: none;
   margin-top: -306px;
 }
 
-#webshop:hover
+.webshop:hover
 {
+  
+}
+
+.webshop span {
+display: none;
+
+}
+.webshop:hover span {
+
+ display:block;
+    position:absolute;
+    top:24.5em; left:13.5em; width:10em;
+	z-index: 20;
+	opacity: 50;
+   transition: opacity .95s ease-in-out;
+   -moz-transition: opacity .95s ease-in-out;
+   -webkit-transition: opacity .95s ease-in-out;
 }
 
 .innerstaringen
