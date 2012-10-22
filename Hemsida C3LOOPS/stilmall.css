@@ -21,13 +21,13 @@ body {
 }
 
 	#mask {
-		width:600%;
+		width:700%;
 		height:100%;
 		background-color:#eee;
 	}
 
 	.item {
-		width:16.666667%;
+		width:14.2857143%;
 		height:100%;
 		float:left;
 		background-image: url('grafik/c3loops/bg.png');
@@ -281,7 +281,7 @@ margin-top: -370px;
 #news-page {
 width: 637px;
 height: 635px;
-left: 350%;
+left: 150%;
 top: 50%;
 position: absolute;
 margin-left: -317px;
@@ -291,7 +291,7 @@ margin-top: -317px;
 #about-page {
 width: 420px;
 height: 567px;
-left: 250%;
+left: 350%;
 top: 50%;
 position: absolute;
 margin-left: -210px;
@@ -301,7 +301,7 @@ margin-top: -283px;
 #media-page {
 width: 968px;
 height: 582px;
-left: 550%;
+left: 450%;
 top: 50%;
 position: absolute;
 margin-left: -484px;
